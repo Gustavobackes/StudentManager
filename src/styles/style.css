@@ -1,0 +1,79 @@
+body {
+  background-color: rgba(0, 0, 0, 0.843);
+  color: rgba(255, 255, 255, 0.95);
+}
+header {
+  text-align: center;
+}
+
+main {
+  padding: 30px 50px;
+}
+
+.card {
+  display: flex;
+  position: sticky;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.lineInput {
+  display: grid;
+}
+
+#send {
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+#tutorial {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 0, 0.6);
+  cursor: pointer;
+}
+#atualizar {
+  text-align: center;
+  position: sticky;
+  width: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: rgba(0, 255, 30, 0.8);
+  cursor: pointer;
+}
+
+table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+table th {
+  background-color: rgb(214, 214, 214);
+  color: black;
+}
+
+table tbody {
+  background-color: rgba(131, 222, 75, 0.7);
+  color: black;
+  font-weight: bold;
+}
+
+.idade {
+  justify-content: right;
+}
