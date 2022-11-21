@@ -58,7 +58,19 @@ function lerDados(aluno) {
   td_aluno.innerHTML = aluno.name;
   td_curso.innerHTML = aluno.course;
   td_idade.innerHTML = aluno.age;
+
+  let btnCopy = document.createElement("button");
+  btnCopy.textContent = "copy";
+  btnCopy.id = "copy";
+  td_id.appendChild(btnCopy);
+  btnCopy.addEventListener("click", function (e) {
+    e.preventDefault();
+    navigator.clipboard.writeText(aluno.id).then(() => {
+      alert("Id Copiado");
+    });
+  });
 }
+
 getAluno();
 
 function addNewAluno(newAluno) {

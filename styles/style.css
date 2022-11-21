@@ -74,6 +74,9 @@ table tbody {
   font-weight: bold;
 }
 
-.idade {
-  justify-content: right;
+#copy {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: auto;
 }
