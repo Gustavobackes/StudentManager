@@ -69,6 +69,15 @@ function lerDados(aluno) {
       alert("Id Copiado");
     });
   });
+
+  let btnDelete = document.createElement("button");
+  btnDelete.textContent = "delete";
+  btnDelete.id = "copy";
+  td_id.appendChild(btnDelete);
+  btnDelete.addEventListener("click", function (e) {
+    e.preventDefault();
+    deleteAluno(aluno.id);
+  });
 }
 
 getAluno();
@@ -114,7 +123,6 @@ function getTutorial() {
   let result = prompt(`Tutorial
   Salvar: Preencher todos os campos menos o ID
   Atualizar: Preencher todos os campos
-  Remover: Apenas o ID
   Para confirmar que leu digite: eu li`);
 
   while (result !== "eu li") {
@@ -126,7 +134,6 @@ function getResposta() {
   result = prompt(`Tutorial
 Salvar: Preencher todos os campos menos o ID
 Atualizar: Preencher todos os campos
-Remover: Apenas o ID
 Para confirmar que leu digite: eu li`);
   return result;
 }

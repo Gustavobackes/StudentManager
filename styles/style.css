@@ -30,11 +30,19 @@ main {
 }
 
 #send {
+  display: flex;
+  margin-left: 50%;
+  transform: translateX(-50%);
   padding: 10px;
   cursor: pointer;
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
+}
+#send :hover {
+  transition: 0.3s;
+  background-color: #ccc;
+  color: black;
 }
 #tutorial {
   text-align: center;
@@ -75,7 +83,8 @@ table tbody {
 }
 
 #copy {
-  display: flex;
+  position: absolute;
+  display: grid;
   position: relative;
   margin-bottom: 10px;
   margin-left: auto;
